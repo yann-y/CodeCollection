@@ -24,6 +24,7 @@ public class test {
         while ((offset = is.read(buff)) != -1) {
             counts = counts + offset;
             i++;
+
             if (i % 4096 == 0) {
                 i = 0;
                 j++;
